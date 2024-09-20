@@ -1,0 +1,9 @@
+.inputFieldContainer{
+    padding: 6px;
+    &:focus{
+        outline: none;
+    }
+}
+.buttonStyle{
+    border-radius: 0px;
+}
