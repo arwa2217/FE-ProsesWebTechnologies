@@ -34,7 +34,8 @@ const Login = () => {
       <form onSubmit={handleSubmit(onSubmit)} className={styles.mainContainer}>
         <div className={styles.container}>
           <img src={logo} className={styles.logoContainer} alt="error display to logo" />
-        <div className={styles.loginForm}>
+        {/* login field */}
+          <div className={styles.loginForm}>
           <span className={styles.iconLabelStyle}>
             <EmailIcon width={16} height={16} customClass={styles.iconCustomClass} />
             <label htmlFor={EMAIL} className={styles.labelStyle}>
@@ -54,7 +55,8 @@ const Login = () => {
               )}
             </p>
           </div>
-        </div>
+          </div>
+          {/* password field */}
         <div className={styles.loginForm}>
           <span className={styles.iconLabelStyle}>
             <PasswordIcon width={16} height={16} customClass={styles.iconCustomClass} />
@@ -63,7 +65,7 @@ const Login = () => {
             </label>
           </span>
           <div>
-            <span style={{ position: 'relative' }}>
+            
               <input
                 type="password"
                 placeholder="Enter password"
@@ -71,7 +73,7 @@ const Login = () => {
                 {...register(PASSWORD, loginValidators[PASSWORD])}
               />
               
-            </span>
+           
             <p className={styles.errorText}>
               {errors.password && (
                 <span className="error">{errors.password.message}</span>

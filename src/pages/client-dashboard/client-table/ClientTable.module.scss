@@ -1,0 +1,31 @@
+.mainContainer{
+    width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        .titleText {
+            margin-bottom: 20px;
+            display: flex;
+            align-self: center;
+            font-family: 'Segoe UI';
+            font-size: var(--font-35);
+            font-weight: var(--font-bold);
+            }
+        .deleteButtonStyle {
+            cursor: pointer;
+            background: var(--red1);
+            }
+}
+table {
+    font-family: 'Segoe UI';
+    width: 100%;
+}
+table td,
+table th {
+    text-align: center;
+    padding: 8px;
+}
+table th {
+    border-bottom: 1px solid #e2e8f0;
+}

@@ -1,8 +1,7 @@
 .mainContainer{
     width: 100%;
     height: 150px;
-    background: linear-gradient(to right, var(--purple1),
-                var(--purple3));
+background: var(--purple1);
         display: flex;
         flex-direction: row;
         justify-content: space-around;
